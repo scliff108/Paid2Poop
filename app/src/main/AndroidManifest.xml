@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.tailoreddevelopmentgroup.paid2poop"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/poop_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity android:name=".DispatchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".WelcomeActivity">
+        </activity>
+        <activity android:name=".SignUpWagesActivity"
+                  android:parentActivityName=".SignUpActivity">
+        </activity>
+        <activity android:name=".WelcomeActivity">
+        </activity>
+        <activity
+            android:name=".StatsActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".EditPoop"
+            android:parentActivityName=".StatsActivity">
+        </activity>
+    </application>
+
+</manifest>

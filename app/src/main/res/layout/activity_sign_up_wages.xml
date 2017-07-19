@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tailoreddevelopmentgroup.paid2poop.SettingsActivity">
+
+    <!-- Salary and Hourly Buttons in a horizontal linear layout -->
+    <LinearLayout
+        android:id="@+id/settings_wage_type_linear_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/salary_button_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/salary"
+            />
+
+        <Button
+            android:id="@+id/hourly_button_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/hourly"
+            />
+    </LinearLayout>
+
+    <!-- Salary Input Linear Layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_wage_type_linear_layout"
+        android:layout_marginTop="16dp"
+        android:id="@+id/salary_stuff_linear_layout_sign_up">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/salary_edit_text_sign_up"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/salary_init"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" dollars per year"
+                android:textSize="18sp"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/hours_per_week_edit_text_sign_up"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hours_per_week_init"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" hours per week"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/vacation_weeks_edit_text_sign_up"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vacation_weeks_init"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" weeks vacation"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/set_wage_salary_button_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Set Wage"
+            android:layout_gravity="center_horizontal"
+            android:onClick="setWageSignUp"
+            android:textSize="18sp"
+            android:background="@drawable/button_pressed"/>
+
+    </LinearLayout>
+
+    <!-- Hourly Input Linear Layout -->
+    <LinearLayout
+        android:id="@+id/hourly_stuff_linear_layout_sign_up"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_wage_type_linear_layout"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/hourly_wage_edit_text_sign_up"
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hourly_wage_init"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" dollars per hour"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/set_wage_hourly_button_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Set Wage"
+            android:onClick="setWageSignUp"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_pressed"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

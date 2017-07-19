@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tailoreddevelopmentgroup.paid2poop.MainActivity">
+
+    <TextView
+        android:id="@+id/poop_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/start_time"
+        android:textSize="75sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/wage_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/poop_timer"
+        android:textSize="20sp"
+        android:text="@string/start_wage"
+        android:textColor="@color/green"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wage_text_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:theme="@style/MyRadioButton"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/standard_rate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/standard_rate"
+            android:textSize="18sp"
+            android:tag="1"/>
+
+        <RadioButton
+            android:id="@+id/overtime_rate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/overtime_rate"
+            android:textSize="18sp"
+            android:tag="1.5"/>
+
+        <RadioButton
+            android:id="@+id/holiday_rate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/holiday_rate"
+            android:textSize="18sp"
+            android:tag="2"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/radio_group"
+        android:onClick="savePoop"
+        android:background="@drawable/button_save"
+        android:text="@string/save_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <!-- Poop Toilet Emoji -->
+
+    <Button
+        android:id="@+id/start_pooping_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/radio_group"
+        android:onClick="startStopPooping"
+        android:background="@drawable/button_start"
+        android:text="@string/start_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/wages_earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save_button"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        android:text="@string/start_earned"/>
+
+    <TextView
+        android:id="@+id/total_earned_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Total Earned"/>
+
+    <TextView
+        android:id="@+id/total_time_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Total Time"/>
+
+</RelativeLayout>

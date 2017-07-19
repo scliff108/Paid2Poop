@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Paid2Poop</string>
+    <string name="parse_app_id">111c6cdb6d0207d4c09f189bae5beb35f3413026</string>
+    <string name="parse_client_id">9607351db3aa10ed08bfea4d8e136a7bce71d075</string>
+    <string name="parse_server_url">http://ec2&#45;52&#45;88&#45;147&#45;111.us-west-2.compute.amazonaws.com:80/parse</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome_message">Welcome to Paid2Poop</string>
+
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Password Again</string>
+    <string name="login">Log in</string>
+    <string name="signup">Sign up</string>
+
+    <string name="error_intro">"Please "</string>
+    <string name="error_blank_username">enter a username</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_mismatched_passwords">enter the same password twice</string>
+    <string name="error_join">" and "</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Loging you in&#8230;</string>
+    <string name="progress_signup">Signing you up&#8230;</string>
+
+    <string name="start_button">Start</string>
+    <string name="stop_button">Stop</string>
+    <string name="save_button">Save</string>
+    <string name="start_time">00:00:00</string>
+    <string name="standard_rate">Standard</string>
+    <string name="overtime_rate">Overtime</string>
+    <string name="holiday_rate">Holiday</string>
+    <string name="start_earned">$0.00</string>
+    <string name="start_wage">"@ "</string>
+    <string name="save_disabled">Finish your poop before you save it.</string>
+
+    <string name="total_poops">"Total Poops: "</string>
+    <string name="total_time">"Total Time: "</string>
+    <string name="wages_earned">"Wages Earned: "</string>
+
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+
+    <string name="salary">Salary</string>
+    <string name="hourly">Hourly</string>
+    <string name="salary_init">50,000</string>
+    <string name="hours_per_week_init">40</string>
+    <string name="vacation_weeks_init">2</string>
+    <string name="hourly_wage_init">15.00</string>
+
+    <string name="error_blank_salary">enter a salary</string>
+    <string name="error_blank_hours_per_week">enter how many hours per week</string>
+    <string name="error_blank_vacation_weeks">enter how many vacation</string>
+    <string name="error_blank_hourly_wage">enter your hourly wage</string>
+
+</resources>
